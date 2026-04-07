@@ -1,0 +1,7 @@
+# Ephemeral runtime state — do not commit
+data/memory-index.sqlite
+data/memory-index.sqlite-shm
+data/memory-index.sqlite-wal
+data/sessions.json
+data/chat-history/
+data/.restart-pending

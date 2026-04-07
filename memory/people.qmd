@@ -1,0 +1,13 @@
+---
+title: "People"
+description: "Important people and relationships"
+---
+
+# Key People
+
+- Jose Olalde: President
+- Fabiola Perez: CEO
+- Lisandro Arcilles: CTO
+- Mirna: Manager of the Caguas branch of the clinic
+- Wilma: Manager of the Bayamon branch of the clinic
+- Christian: Executive assistant to the CEO
