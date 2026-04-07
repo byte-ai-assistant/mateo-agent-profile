@@ -20,7 +20,7 @@
 3. Name: `OpenClaw GMB Access`
 4. Click **Create**
 5. Download JSON credentials file
-6. Save as `~/.openclaw/credentials/gmb_credentials.json`
+6. Save as `~/Agent/mateo/credentials/client_secret_<client_id>.apps.googleusercontent.com.json`
 
 ## Step 3: Configure OAuth Consent Screen
 

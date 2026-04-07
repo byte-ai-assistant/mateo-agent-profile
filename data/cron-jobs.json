@@ -1,0 +1,10 @@
+[
+  {
+    "id": "cmr-email",
+    "schedule": "0 8,16 * * *",
+    "description": "CMR email reply — check inbox and reply to new emails",
+    "action": "Run the cmr-email-reply skill: fetch unread emails from the CMR inbox and save draft replies for any new customer emails using the knowledge base.",
+    "enabled": true,
+    "createdAt": "2026-04-07T00:00:00.000Z"
+  }
+]

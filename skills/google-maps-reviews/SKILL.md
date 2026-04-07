@@ -1,6 +1,11 @@
 ---
 name: google-maps-reviews
 description: Manage Google My Business reviews for CMR locations. Check reviews weekly (Monday mornings), draft responses for approval, generate sentiment summaries, and alert on negative reviews immediately. Use when managing business reviews, customer feedback analysis, or reputation monitoring for Centro de Medicina Regenerativa.
+metadata:
+  openclaw:
+    requires:
+      bins:
+        - python3
 ---
 
 # Google Maps Reviews Management
@@ -69,6 +74,9 @@ python3 scripts/gmb_reviews.py list-reviews --location LOCATION --days 7
 # Generate summary
 python3 scripts/gmb_reviews.py summary --location LOCATION --days 7
 
+# Get aggregate rating for a location
+python3 scripts/gmb_reviews.py rating --location LOCATION
+
 # Reply to review
 python3 scripts/gmb_reviews.py reply --review REVIEW_NAME --reply-text "Your reply"
 
@@ -76,9 +84,9 @@ python3 scripts/gmb_reviews.py reply --review REVIEW_NAME --reply-text "Your rep
 python3 scripts/gmb_reviews.py list-reviews --location LOCATION --json
 ```
 
-## Weekly Workflow (Monday Morning — Cron Job)
+## Weekly Workflow (Monday Morning)
 
-The cron job `f0d7ddf7` runs every Monday at 5am AST and does the following:
+When run on Monday mornings, do the following:
 
 1. **Fetch reviews** for the past 7 days from both Bayamon and Caguas locations
 2. **Generate summary** with sentiment breakdown (positive/neutral/negative)
