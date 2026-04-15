@@ -6,7 +6,7 @@
       {
         "name": "unread-emails-exist",
         "type": "shell",
-        "command": "gws gmail users messages list --params '{\"labelIds\":[\"INBOX\",\"UNREAD\"],\"maxResults\":1}' --json '{}' 2>/dev/null | grep -c '\"id\"'",
+        "command": "gws gmail users messages list --params '{\"userId\":\"me\",\"q\":\"is:unread in:inbox\",\"maxResults\":1}' 2>/dev/null | grep -c '\"id\"'",
         "expect": "non-zero-output"
       }
     ],

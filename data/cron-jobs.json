@@ -5,6 +5,23 @@
     "description": "CMR email reply — check inbox and reply to new emails",
     "action": "Run the cmr-email-reply skill: fetch unread emails from the CMR inbox and save draft replies for any new customer emails using the knowledge base.",
     "enabled": true,
-    "createdAt": "2026-04-07T00:00:00.000Z"
+    "createdAt": "2026-04-07T00:00:00.000Z",
+    "lastRun": "2026-04-15T14:00:00.501Z"
+  },
+  {
+    "id": "aa1804e6",
+    "schedule": "0 8 * * 1",
+    "description": "Weekly CMR Facebook Ads report - every Monday at 8am",
+    "action": "Run the Facebook Ads analysis for the last 7 days using the analyze-cmr-ads skill (run_analysis.py --last-7-days), then send the results by email to diegoolalde@gmail.com. Follow the report template exactly: MoM tables (LLAMADAS and MENSAJERIA separately), Anuncios a Reemplazar, Mejores Creativos del Periodo, and 3 Acciones. Write in Spanish. Use only plain hyphens (no em dashes or special characters) in the email subject and body to avoid encoding issues. Do not include emojis in headings.",
+    "enabled": true,
+    "createdAt": "2026-04-15T16:41:27.919Z"
+  },
+  {
+    "id": "f8eccdb3",
+    "schedule": "0 8 1 * *",
+    "description": "Monthly CMR Facebook Ads report - 1st of every month at 8am",
+    "action": "Run the Facebook Ads analysis for the full previous calendar month using the analyze-cmr-ads skill. To get the date range, compute the first and last day of the previous month (e.g. if today is May 1, use --start-date 2026-04-01 --end-date 2026-04-30). Run: python3 scripts/run_analysis.py --start-date YYYY-MM-01 --end-date YYYY-MM-[last day] from /Users/cmrai/Agent/mateo/profile/skills/analyze-cmr-ads/. Then send the results by email to diegoolalde@gmail.com with subject \"CMR Ads - Reporte Mensual [Month] [Year]\". Follow the report template exactly: MoM tables (LLAMADAS and MENSAJERIA separately), Anuncios a Reemplazar, Mejores Creativos del Periodo, and 3 Acciones. Write in Spanish. Use only plain hyphens (no em dashes or special characters) in the email subject and body to avoid encoding issues. Do not include emojis in headings.",
+    "enabled": true,
+    "createdAt": "2026-04-15T16:41:31.526Z"
   }
 ]

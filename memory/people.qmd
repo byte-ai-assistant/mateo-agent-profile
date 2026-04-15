@@ -6,6 +6,7 @@ description: "Important people and relationships"
 # Key People
 
 - Jose Olalde: President
+- Diego Olalde: COO, primary user (diegoolalde@gmail.com)
 - Fabiola Perez: CEO
 - Lisandro Arcilles: CTO
 - Mirna: Manager of the Caguas branch of the clinic
